@@ -1,0 +1,255 @@
+@import url(normalize.css);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* use this class for block that has child floated elements */
+.ba-clearfix:before,
+.ba-clearfix:after {
+  content: '';
+  display: table;
+}
+
+.ba-clearfix:after {
+  clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-clearfix {
+  *zoom: 1;
+}
+
+/* classes for text */
+.ba-text-center {
+  text-align: center;
+}
+
+.ba-text-left {
+  text-align: left;
+}
+
+.ba-text-right {
+  text-align: right;
+}
+
+.ba-text-justify {
+  text-align: justify;
+}
+
+/* layout classes */
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.ba-float-left {
+  float: left;
+}
+
+.ba-float-right {
+  float: right;
+}
+
+/* ba grid defination */
+/* use this class for block that has child floated elements */
+.ba-grid:before,
+.ba-grid:after {
+  content: '';
+  display: table;
+}
+
+.ba-grid:after {
+  clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-grid {
+  *zoom: 1;
+}
+
+.ba-grid {
+  margin: 0 -15px;
+}
+
+.ba-grid + .ba-grid {
+  margin-top: 30px;
+}
+
+.ba-grid > [class*="ba-column-"] {
+  padding: 0 15px;
+}
+
+[class*="ba-column-"] {
+  float: left;
+}
+
+.ba-column-12 {
+  width: 100%;
+}
+
+.ba-column-11 {
+  width: 91.667%;
+}
+
+.ba-column-10 {
+  width: 83.334%;
+}
+
+.ba-column-9 {
+  width: 75%;
+}
+
+.ba-column-8 {
+  width: 66.667%;
+}
+
+.ba-column-7 {
+  width: 58.33333333%;
+}
+
+.ba-column-6 {
+  width: 50%;
+}
+
+.ba-column-5 {
+  width: 41.6666667%;
+}
+
+.ba-column-4 {
+  width: 33.334%;
+}
+
+.ba-column-3 {
+  width: 25%;
+}
+
+.ba-column-2 {
+  width: 16.667%;
+}
+
+.ba-column-1 {
+  width: 8.334%;
+}
+
+body {
+  padding: 110px 0 90px;
+  color: #333;
+}
+
+.ba-header {
+  padding-bottom: 35px;
+}
+
+.ba-sub-title,
+.ba-title {
+  margin: 0;
+  line-height: 1;
+}
+
+.ba-sub-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  color: #898f8f;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ba-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  color: #ffcc00;
+  text-transform: uppercase;
+  font-size: 60px;
+  padding-top: 20px;
+}
+
+.ba-divider {
+  width: 35px;
+  height: 19px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.ba-divider:before, .ba-divider:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #ffcc00;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ba-divider:before {
+  right: 100%;
+}
+
+.ba-divider:after {
+  left: 100%;
+}
+
+.ba-slider {
+  margin-top: 40px;
+}
+
+.ba-slider .ba-column-6 {
+  padding: 75px 0;
+}
+
+.ba-slider .ba-column-6:first-child {
+  border-right: 1px solid #ffcc00;
+}
+
+.ba-slider__image {
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ba-slider__image .ba-corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  border-color: #ffcc00;
+}
+
+.ba-slider__image .ba-corner--tl {
+  top: 0;
+  left: 0;
+  border-left-style: solid;
+  border-top-style: solid;
+}
+
+.ba-slider__image .ba-corner--tr {
+  top: 0;
+  right: 0;
+  border-top-style: solid;
+  border-right-style: solid;
+}
+
+.ba-slider__image .ba-corner--br {
+  bottom: 0;
+  right: 0;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.ba-slider__image .ba-corner--bl {
+  bottom: 0;
+  left: 0;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+
+.ba-slider__image img {
+  border: 1px solid #ffcc00;
+  width: 100%;
+}
